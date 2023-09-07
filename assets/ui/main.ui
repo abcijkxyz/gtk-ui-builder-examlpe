@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0;"/>
+    <object class="AdwApplicationWindow" id="window">
+        <property name="default-width">600</property>
+        <property name="default-height">500</property>
+        <property name="content">
+            <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <child>
+                    <object class="AdwHeaderBar">
+                        <property name="title-widget">
+                            <object class="AdwWindowTitle">
+                                <property name="title">Example app</property>
+                            </object>
+                        </property>
+                    </object>
+                </child>
+                <child>
+                    <object class="AdwPreferencesPage">
+                        <child>
+                            <object class="AdwPreferencesGroup">
+                                <property name="vexpand">true</property>
+                                <property name="valign">center</property>
+                                <child>
+                                    <object class="GtkButton">
+                                        <property name="label">Hello, World!</property>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+            </object>
+        </property>
+    </object>
+</interface>
